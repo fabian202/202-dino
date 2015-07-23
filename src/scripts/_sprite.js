@@ -19,7 +19,6 @@ Sprite.prototype.draw = function(ctx, x, y) {
 };
 
 exports.initSprites = function(img){
-  console.log('init');
   images.s_bg = new Sprite(img,   2, 53, 1024, 17);
 	images.s_bg.color = "#fff"; // save background color
 
@@ -33,6 +32,15 @@ exports.initSprites = function(img){
     new Sprite(img, 764,2,44,47),
     new Sprite(img, 808,2,44,47),
   ];
+
+	images.s_cactus = [
+		new Sprite(img,332,2,25,50),
+		new Sprite(img,430,2,51,50),
+		new Sprite(img,227,2,17,35),
+		new Sprite(img,245,2,34,35),
+		new Sprite(img,381,2,49,50),
+
+	];
 
 }
 
